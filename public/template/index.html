@@ -6,13 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/pojoaque.min.css"
+        integrity="sha512-7C2kV8asrWDQGC96Y1KMSa/NQL18/kUEr4XqTNAeJjOaw9ada3reoy64Ze6dK9TbfaX7sEjE0mF4/17QTRpf/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Mr.T0t000 Article</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 
 </head>
 
 <body class="bg-yellow-100 dark:bg-gray-800">
     <div>
-        <nav class="fixed z-50 bg-yellow-100 w-full  dark:bg-gray-800 flex flex-row justify-center items-center h-10">
+        <nav class="fixed z-50 bg-yellow-100 w-full  dark:bg-gray-800 flex flex-row justify-center items-center h-14">
             <button id="toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-yellow-500" viewBox="0 0 20 20"
                     fill="currentColor">
@@ -24,22 +32,55 @@
         </nav>
 
         <div class="flex justify-center ">
+
             <div class="w-11/12 lg:px-72 md:px-56 px-4 pt-20 overflow-y-auto ">
                 <div class="flex flex-col ">
                     <img src="../img/figma.png" class="w-14 h-14" alt="python">
 
-                    <h1 class="lg:text-3xl md:text-2xl sm:text-xl text-xl text-gray-800 dark:text-gray-200 mt-4 font-semibold">
+                    <h1
+                        class="lg:text-4xl md:text-2xl sm:text-2xl text-2xl text-gray-800 dark:text-gray-200 my-4 font-medium">
                         Figma Figma FigmaFigma Figma Figma Figma
                     </h1>
 
-                    <h3 class="text-xs text-gray-800 dark:text-gray-200 mt-2 mb-8">
+                    <h3 class="text-xs text-gray-800 dark:text-gray-200 mt-2 mb-12">
                         Senin, 1 Juni 2020
                     </h3>
 
-                    <div class=" text-md text-gray-800 dark:text-gray-200 mt-8">
-                        <h1 class="lg:text-3xl md:text-xl text-lg mb-2">
+                    <div class=" text-md text-gray-800 dark:text-gray-200 mt-12">
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium">
                             Halo
                         </h1>
+                        <pre>
+                            <code class="c lg:text-base md:text-base text-sm">
+
+/*
+
+#include &ltstdio.h> //Header File
+#include &ltstdlib.h>
+//Kamus Global
+
+int main() { /*Program Utama*/
+
+    /*Kamus Lokal*/
+    int arr[] = {-1, 2, -3, 4, -5, 6, -7, 8, -9, 10, -11};
+    int sum;
+    //int N, i, sum;
+
+    /*Algoritma*/
+    sum = 0;
+
+    for (int i = 0; i < 11; i++) {
+        sum = sum + arr[i];
+    }
+
+    /*output*/
+    printf("Total Jumlah : %d", sum);
+
+    return 0;
+}
+
+                            </code>
+                        </pre>
 
                         <p class="lg:text-lg md:text-base text-sm pt-4">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat atque, iure totam sed
@@ -53,9 +94,21 @@
                         </p>
 
 
-                        <h1 class="lg:text-3xl md:text-xl text-lg mb-2 mt-8">
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
                             Halo-Halo
                         </h1>
+
+
+                        <!-- sepasi di dalam tag <code> mempengaruhi indentasi  -->
+                        <!-- apapun bahasanya kalau ada kurung siku buka "<", harus ganti "<" dgn &lt contoh <div></div> dengan &ltdiv></div>-->
+                        <pre >
+                            <code class="javascript lg:text-base md:text-base text-sm">
+document.querySelector('#toggle').addEventListener('click', function() {
+    document.documentElement.classList.toggle('dark');
+});
+                            </code>
+                        </pre>
+
 
                         <p class="lg:text-lg md:text-base text-sm pt-4">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat atque, iure totam sed
@@ -77,9 +130,19 @@
                         </p>
 
 
-                        <h1 class="lg:text-3xl md:text-xl text-lg mb-2 mt-8">
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
                             Halo-Halo
                         </h1>
+
+                        <pre>
+                            <code class="java lg:text-base md:text-base text-sm">
+public class java {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+                            </code>
+                        </pre>
 
                         <p class="lg:text-lg md:text-base text-sm pt-4">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat atque, iure totam sed
@@ -101,6 +164,7 @@
             </h1>
         </footer>
     </div>
+
 
     <script src="../DarkMode.js"></script>
 </body>
