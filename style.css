@@ -519,6 +519,10 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -800,6 +804,11 @@ video {
   .lg\:px-72 {
     padding-left: 18rem;
     padding-right: 18rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:text-lg {
