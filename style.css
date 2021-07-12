@@ -697,8 +697,24 @@ video {
   padding-right: 1rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .font-mono {
@@ -738,6 +754,10 @@ video {
   font-weight: 500;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
@@ -754,6 +774,11 @@ video {
 }
 
 .text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgba(37, 99, 235, var(--tw-text-opacity));
+}
+
+.hover\:text-blue-600:hover {
   --tw-text-opacity: 1;
   color: rgba(37, 99, 235, var(--tw-text-opacity));
 }
