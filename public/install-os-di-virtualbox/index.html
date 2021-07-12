@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/pojoaque.min.css"
+        integrity="sha512-7C2kV8asrWDQGC96Y1KMSa/NQL18/kUEr4XqTNAeJjOaw9ada3reoy64Ze6dK9TbfaX7sEjE0mF4/17QTRpf/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mr.T0t000 Article</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body class="bg-yellow-100 dark:bg-gray-800">
+    <div>
+        <nav class="fixed z-50 bg-yellow-100 w-full  dark:bg-gray-800 flex flex-row justify-center items-center h-14">
+            <button id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-yellow-500" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </nav>
+
+        <div class="flex justify-center ">
+
+            <div class="lg:w-11/12 md:w-11/12 w-full lg:px-72 md:px-56 px-4 pt-20 overflow-y-auto ">
+                <div class="flex flex-col ">
+                    <img src="../img/virtualbox.png" class="w-14 h-14" alt="python">
+
+                    <h1
+                        class="lg:text-4xl md:text-3xl sm:text-3xl text-3xl text-gray-800 dark:text-gray-200 my-4 font-medium">
+                        Menginstal Linux di Windows ??
+                    </h1>
+
+                    <h3 class="text-xs text-gray-800 dark:text-gray-200 mt-2 mb-10">
+                        Senin, 12 Juli 2021
+                    </h3>
+
+
+
+
+
+                    <div class=" text-md text-gray-800 dark:text-gray-200 mt-10">
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium">
+                            Intro
+                        </h1>
+
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Linux merupakan OS yang open source, yang berarti siapapun bisa memilikinya dengan gratis. Linux juga dikenal dengan keandalannya dan ringan dibanding dengan Windows. Karena open source maka banyak orang yang mengembangkan OS ini sehingga sampai sekarang banyak distro Linux yang beredar, ada distro khusus untuk hacking, untuk devloper, untuk designer, ada juga distro untuk penggunaan sehari hari.
+                            <br><br/>
+                            Bisakah menginstal Linux di laptop Windows kita? Jawabannya, bisa. Kita bisa menginstal OS tersebut dengan menggunakan Virtual Machine. Virtual Machine adalah Virtual Environtment yang berfungsi sebagai komputer sistem virtual yang memiliki CPU, memory, network interface, dan storagenya sendiri.
+                            <br><br/>
+                            Ada beberapa Virtual Machine yang bisa kita gunakan salah duanya yaitu VMware dan Virtualbox. Kali ini akan menggunakn Virtualbox sebagai contoh.
+                        </p>
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Yang perlu dipersiapkan
+                        </h1>
+
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Jika belum menginstal Virtualbox bisa downlaod filenya di <a class="hover:text-blue-600" href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a>
+                            <br><br/>
+
+                            Downlaod file ISO Ubuntu di <a class="hover:text-blue-600" href="https://ubuntu.com/downloadDownloads">https://ubuntu.com/download</a><br/> Pastikan kamu mempunyai 2gb free memory ram dan paling tidak 16GB storage kosong.
+
+                            <br><br/>
+                            Jika dirasa Ubuntu terlalu berat bisa menggunakan distro Xubuntu. Downlaod file ISO di <a class="hover:text-blue-600" href="https://xubuntu.org/download/">https://xubuntu.org/download/</a>
+                            <br> Xubuntu bisa digunakan dengan minimal memory 512 MB dan paling tidak 8GB storage.
+                        </p>
+
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Persiapan Instal OS
+                        </h1>
+
+                        <img class="pt-12 pb-2" src="./1.PNG" alt="TCPFlow">
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Klik New.
+                            <br><br>
+                        </p>
+
+                        <img class="pt-12 pb-2" src="./2.PNG" alt="TCPFlow">
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Isi nama sesuai yang kalian inginkan. Kemudian pilih folder tempat instalasi mesin. Pastikan Tipe dan Versionnya adalah Linux Ubuntu (64-bit). Atur memori menjadi 4096.
+                            <br><br>
+                        </p>
+
+                        <img class="pt-12 pb-2" src="./3.PNG" alt="TCPFlow">
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Kemudian atur file size minimal 16GB. Sesuaikan dengan gambar dan klik Create.
+                            <br><br>
+                        </p>
+
+                        <img class="pt-12 pb-2" src="./4.PNG" alt="TCPFlow">
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Masuk ke menu setting (sebelah New). Atur CPU processornya menjadi 4.
+                            <br><br>
+                        </p>
+
+                        <img class="pt-12 pb-2" src="./5.PNG" alt="TCPFlow">
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Kemudian masuk ke storage dan masukkan file ISO yang sudah di download. dan klik OK.
+                            <br><br>
+                        </p>
+
+
+
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Instal OS
+                        </h1>
+
+                        <img class="pt-12 pb-2" src="./6.PNG" alt="TCPFlow">
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Setelah proses setting tadi selesai. Klik Start untuk menjalankan mesinnya. Setelah muncul seperti pada gambar, klik Install Ubuntu.
+                            <br><br>
+                        </p>
+
+                        <img class="pt-12 pb-2" src="./7.PNG" alt="TCPFlow">
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Secara default keyboard layout nya yaitu English(US). Setelah itu akan muncul seerti gambar diatas, silakan pilih normal Instalation. Jika ingin menginstal sekalian diupdate maka jangan lupa centang "Download updates while installing". Kemudian klik continue.
+                            <br><br>
+                        </p>
+
+                        <img class="pt-12 pb-2" src="./8.PNG" alt="TCPFlow">
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Pada Instalation Type, pilih "Erase disk and Install Ubuntu"
+                            <br><br>
+                        </p>
+
+                        <img class="pt-12 pb-2" src="./9.PNG" alt="TCPFlow">
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Akan muncul pesan konfirmasi. Klik Continue
+                            <br><br>
+                        </p>
+
+                        <img class="pt-12 pb-2" src="./10.PNG" alt="TCPFlow">
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Pilih zona lokasi untuk menentukan imezone yang akan digunakan. Kemudian klik continue. <br/>
+                            Sebelum masuk proses penginstalan kita diwajibkan untuk mengisi Nama kita, Nama komputer (Bebas mau di isi apa, Nama komputer ini digunakan ketika mesin kalian berkomunikasi dengan mesin yang lain seperti saat transfer file lewat network), useername dan password. Setelah selesai mengisi klik "Continue". <br/><br/>Proses penginstalan akan berlangsung, butuh beberapa menit.
+                            <br><br>
+                        </p>
+
+                        <img class="pt-12 pb-2" src="./11.PNG" alt="TCPFlow">
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Ketika proses penginstalan selesai. Kita akan diminta untuk merestar mesin kita. Klik "restart".
+                            <br><br>
+                            <br><br>
+                            Selesai deh. Kita akan langsung diminta memasukkan password untuk mengakses aplikasi di dalamnya.
+                        </p>
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-yellow-100 flex dark:bg-gray-800 justify-center w-full items-center h-10 mt-20">
+            <h1 class=" dark:text-gray-200 text-gray-800 font-mono">
+                Mr.T0t000
+            </h1>
+        </footer>
+    </div>
+
+
+    <script src="../DarkMode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/pojoaque.min.css"
+        integrity="sha512-7C2kV8asrWDQGC96Y1KMSa/NQL18/kUEr4XqTNAeJjOaw9ada3reoy64Ze6dK9TbfaX7sEjE0mF4/17QTRpf/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mr.T0t000 Article</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body class="bg-yellow-100 dark:bg-gray-800">
+    <div>
+        <nav class="fixed z-50 bg-yellow-100 w-full  dark:bg-gray-800 flex flex-row justify-center items-center h-14">
+            <button id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-yellow-500" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </nav>
+
+        <div class="flex justify-center ">
+
+            <div class="lg:w-11/12 md:w-11/12 w-full lg:px-72 md:px-56 px-4 pt-20 overflow-y-auto ">
+                <div class="flex flex-col ">
+                    <img src="../img/Python_logo_icon.png" class="w-14 h-14" alt="python">
+
+                    <h1
+                        class="lg:text-4xl md:text-3xl sm:text-3xl text-3xl text-gray-800 dark:text-gray-200 my-4 font-medium">
+                        TCP Socket Programming Menggunakan Python
+                    </h1>
+
+                    <h3 class="text-xs text-gray-800 dark:text-gray-200 mt-2 mb-10">
+                        Selasa, 1 Juni 2021
+                    </h3>
+
+                    <div class=" text-md text-gray-800 dark:text-gray-200 mt-10">
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium">
+                            Intro
+                        </h1>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Beberapa waktu yang lalu gua mendapatkan tugas dari dosen mata kuliah jaringan komputer. Tugas itu dikerjakan secara berkelompok yang terdiri dari 4 orang. Tugasnya yaitu TCP dan UDP socket programming. Akhirnya kita membagi tugas, dan kebetulan gua dapat bagian TCP socket programming. Tujuan gua buat artikel ini adalah selain untuk sharing, gua juga mau ilmu yang pernah gua dapetin itu tidak mudah untuk hilang dari otak gua dengan cara menulis catatan di artikel sederhana ini. Okee langsung saja masuk ke pembahasan.
+                        </p>
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Apa itu TCP?
+                        </h1>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            TCP atau Transmission Control Protocol adalah protokol komunikasi dalam computer networking. TCP berada pada layer transport atau layer ke 4 dari 7 OSI layer. <br/> Dalam TCP ada istilah yang namanya 3 <span class="font-semibold">Way Handshake </span>. Istilah tersebut merupakan gimana cara berkomunikasi menggunakan TCP. Jadi gini, 3 <span class=" font-semibold">Way Handshake </span> dimulai dari <span class="font-semibold">SYN </span> -> <span class="font-semibold">SYN ACK </span> -> <span class="font-semibold">ACK </span> <br/><br/>
+
+                            <span class="font-semibold">SYN </span>(Synchronize Sequence Number) berarti client ingin membuat koneksi dengan server dengan mengirimkan <span class="font-semibold">SYN </span> ke server yang menginformasikan bahwa klien kemungkinan akan memulai komunikasi. <br/>
+
+                            <span class="font-semibold">SYN ACK </span> berarti server merespon permintaan client. <span class="font-semibold">ACK </span> (Acknowledgement) menandakan respon dari segmen yang diterimanya sedangkan <span class="font-semibold">SYN </span> menandakan dengan nomor urut apa yang mungkin untuk memulai segmen. <br/>
+
+                            <span class="font-semibold">ACK </span> berarti client mengirim konfirmasi ke server bahwa client telah menerima <span class="font-semibold">SYN </span>, dan keduanya membangun koneksi.
+                        </p>
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Markicob
+                        </h1>
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Untuk flow koneksinya seperti berikut. <br/>
+                        </p>
+                        <img class="pt-4" src="./TCP.png" alt="TCPFlow">
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            TCPServer.py
+                        </h1>
+
+                        <pre>
+                            <code class="python lg:text-base md:text-base text-sm">
+    import socket
+
+    # Inisialisasi pemuatan soket dan menunggu koneksi
+
+
+    server_Socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    #mengset soket ke alamat lokal,
+    #Isiannya sepasang yaitu (host,host harus diisi alamat lokal yaitu localhost atau 127.0,0,1
+    server_Socket.bind(('localhost', 12000))
+
+    #mengaktifkan server untuk menerima koneksi.
+    #Argumen backlog harus di isi minimal0 (jika lebih rendah, akan diset ke 0);
+    server_Socket.listen(5)
+
+    while True:
+        print("Server menunggu koneksi")
+
+        #Terima koneksi.
+        #Soket harus dii-bind ke sebuah alamat dan listening koneksi.
+        #Return value nya adalah sepasang (conn, address) di mana conn adalah objek
+        #soketang dapat digunakan untuk mengirim dan menerima data pada sambungan,
+        #dan address adalah alamat yang tke soket di ujung sambungan lainnya.
+        client_Socket,addr = server_Socket.accept()
+
+
+        # memulai mendengarkan  TCP request yang akan datang
+        print("koneksi klien dari ",addr)
+        while True:
+            data = client_Socket.recv(1024)
+            if not data or data.decode('utf-8') == 'END':
+                break
+            print("menerima dari client : ",data.decode("utf-8"))
+            try:
+                client_Socket.send(bytes('HEy client','utf-8'))
+            except:
+                print("Keluar")
+        client_Socket.close()
+    server_Socket.close()
+
+
+                            </code>
+                        </pre>
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Penjelasan TCPServer
+                        </h1>
+
+                        <pre>
+                            <code class="python lg:text-base md:text-base text-sm">
+    import socket
+
+    # Inisialisasi pemuatan soket dan menunggu koneksi
+
+
+    server_Socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    #mengset soket ke alamat lokal,
+    #Isiannya sepasang yaitu (host,host harus diisi alamat lokal yaitu localhost atau 127.0,0,1
+    server_Socket.bind(('localhost', 12000))
+
+    #mengaktifkan server untuk menerima koneksi.
+    #Argumen backlog harus di isi minimal0 (jika lebih rendah, akan diset ke 0);
+    server_Socket.listen(5)
+
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Dalam socket programming, pertama yang hrus kita lakkan adalah import module socket. kemudian kita membuat variabel dengan nama server_socket yang isinya kita memanggil addresFamily socket.AF_INET dan jenis soketnya yaitu socket.SOCK_STREAM.
+                            <br><br>
+                            Kemudian kita harus melakukan binding dengan menggunakan method bind. method ini digunakan untukmengset soket ke alamat lokal. Diisi dengan sepasang alamat IP dan port. Kmudian kita akan mengaktifkan server dengan menggunakan function listen(), parameter yang di isi harus lebih besar sama dengan 0. Parameter tersebut digunakan untuk menentukan jumlah koneksi yang tidak diterima yang akan diizinkan oleh sistem sebelum menolak koneksi baru.
+                            <br><br>
+                        </p>
+
+                        <pre>
+                            <code class="python lg:text-base md:text-base text-sm">
+    while True:
+        print("Server menunggu koneksi")
+
+        #Terima koneksi.
+        #Soket harus dii-bind ke sebuah alamat dan listening koneksi.
+        #Return value nya adalah sepasang (conn, address) di mana conn adalah objek
+        #soketang dapat digunakan untuk mengirim dan menerima data pada sambungan,
+        #dan address adalah alamat yang tke soket di ujung sambungan lainnya.
+        client_Socket,addr = server_Socket.accept()
+
+
+        # memulai mendengarkan  TCP request yang akan datang
+        print("koneksi klien dari ",addr)
+        while True:
+            data = client_Socket.recv(1024)
+            if not data or data.decode('utf-8') == 'END':
+                break
+            print("menerima dari client : ",data.decode("utf-8"))
+            try:
+                client_Socket.send(bytes('HEy client','utf-8'))
+            except:
+                print("Keluar")
+        client_Socket.close()
+    server_Socket.close()
+
+
+                            </code>
+                        </pre>
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Masuk ke fase menunggu koneksi. Kita menggunakan infinite-loop. Dalam menerima koneksi (accept()), Soket harus di-bind ke sebuah alamat dan listening koneksi. Return value nya adalah sepasang (conn, address) di mana conn adalah objek soket baru yang dapat digunakan untuk mengirim dan menerima data pada sambungan, dan address adalah alamat yang terikat ke soket diujung sambungan lainnya.
+                            <br><br>
+                            Ketika koneki ter-establish maka akan print alamat dari client. kemudian kita perlu men-decode payload yang di kirim dan diprint. Ketika koniksi awal ter-establish maka server juga akan mengirim sebuah payload berupa string yang isinya HEy client.
+                            <br><br>
+                        </p>
+
+
+
+
+
+
+
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            TCPClient.py
+                        </h1>
+
+
+                        <!-- sepasi di dalam tag <code> mempengaruhi indentasi  -->
+                        <!-- apapun bahasanya kalau ada kurung siku buka "<", harus ganti "<" dgn &lt contoh <div></div> dengan &ltdiv></div>-->
+                        <pre >
+                            <code class="python lg:text-base md:text-base text-sm">
+    import socket
+
+    client_Socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    #Hubungkan soket ke remote address.
+    #Untuk soket IP, alamatnya sepasang (host, port).
+    client_Socket.connect(('localhost',12000))
+    payload = 'Halo Serperr' #Payload yang dikirim ke server
+    try:
+        while True:
+            client_Socket.send(payload.encode('utf-8')) #mengirim data string ke socket
+            data = client_Socket.recv(1024) #Menerima hingga 1024 bytes dari socket
+            print(str(data))
+            more = input('Mau kirim data lagi?y/n ')
+            if more.lower() == 'y':
+                payload = input('Masukkan payload yang akan dikirim : ')
+            else:
+                print ("stop")
+                break
+    except KeyboardInterrupt:
+        print("Keluar")
+    client_Socket.close()
+
+
+                            </code>
+                        </pre>
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Penjelasan TCPServer
+                        </h1>
+                        <pre >
+                            <code class="python lg:text-base md:text-base text-sm">
+    import socket
+
+    client_Socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    #Hubungkan soket ke remote address.
+    #Untuk soket IP, alamatnya sepasang (host, port).
+    client_Socket.connect(('localhost',12000))
+    payload = 'Halo Serperr' #Payload yang dikirim ke server
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Sama seperti server pertama-tama kita perlu megimport module dan mendeklarasikan sebuah variabel yang isinya socket.socket(socket.AF_INET,socket.SOCK_STREAM) dan setelah itu kita menggunakan method connect untuk membangun koneksi dengan parameter berisi alamat(ip, dan port). kita juka membuat payload berupa string, yang mana ketika koneksi antara client dan server terbangun maka payload tersebut nantinya akan terkirimkan.
+                            <br><br>
+                        </p>
+
+                        <pre >
+                            <code class="python lg:text-base md:text-base text-sm">
+    try:
+        while True:
+            client_Socket.send(payload.encode('utf-8')) #mengirim data string ke socket
+            data = client_Socket.recv(1024) #Menerima hingga 1024 bytes dari socket
+            print(str(data))
+            more = input('Mau kirim data lagi?y/n ')
+            if more.lower() == 'y':
+                payload = input('Masukkan payload yang akan dikirim : ')
+            else:
+                print ("stop")
+                break
+    except KeyboardInterrupt:
+        print("Keluar")
+    client_Socket.close()
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                            Kita menggunakan infinite-loop pada fase koneksi dimana client bisa memilih untuk mengirimkan payload lain atau tidak. Ketika client memilih tidak untuk mengirim payload lain maka koneksi akan terputus. Walaupun koneksi terputus, Server akan tetap menyala menunggu koneksi selanjutnya.
+                        </p>
+
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Hasil
+                        </h1>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Dalam menjalankan programnya kita harus memulainya dengan TCPClient.py terlebih dahulu. Jika tidak maka akan muncul error.
+                            <br>
+                        </p>
+                        <img class="pt-4" src="./KoneksiError.PNG" alt="TCPFlow">
+
+                        <p class="lg:text-lg md:text-base text-base pt-8">
+                            Server
+                            <br>
+                        </p>
+                        <img class="pt-4" src="./koneksiServer.PNG" alt="TCPFlow">
+
+                        <p class="lg:text-lg md:text-base text-base pt-8">
+                            Client
+                            <br>
+                        </p>
+                        <img class="pt-4" src="./koneksiClient.PNG" alt="TCPFlow">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-yellow-100 flex dark:bg-gray-800 justify-center w-full items-center h-10 mt-20">
+            <h1 class=" dark:text-gray-200 text-gray-800 font-mono">
+                Mr.T0t000
+            </h1>
+        </footer>
+    </div>
+
+
+    <script src="../DarkMode.js"></script>
+</body>
+
+</html>
