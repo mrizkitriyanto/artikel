@@ -746,6 +746,10 @@ video {
   line-height: 2.25rem;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -756,10 +760,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.tracking-wide {
-  letter-spacing: 0.025em;
 }
 
 .text-black {
