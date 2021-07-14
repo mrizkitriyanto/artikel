@@ -252,7 +252,7 @@
                             </code>
                         </pre>
 
-                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                        <p class="lg:text-lg md:text-base text-base ">
                             Sama seperti server pertama-tama kita perlu megimport module dan mendeklarasikan sebuah variabel yang isinya socket.socket(socket.AF_INET,socket.SOCK_STREAM) dan setelah itu kita menggunakan method connect untuk membangun koneksi dengan parameter berisi alamat(ip, dan port). kita juka membuat payload berupa string, yang mana ketika koneksi antara client dan server terbangun maka payload tersebut nantinya akan terkirimkan.
                             <br><br>
                         </p>
@@ -276,7 +276,7 @@
                             </code>
                         </pre>
 
-                        <p class="lg:text-lg md:text-base text-base font-normal ">
+                        <p class="lg:text-lg md:text-base text-base ">
                             Kita menggunakan infinite-loop pada fase koneksi dimana client bisa memilih untuk mengirimkan payload lain atau tidak. Ketika client memilih tidak untuk mengirim payload lain maka koneksi akan terputus. Walaupun koneksi terputus, Server akan tetap menyala menunggu koneksi selanjutnya.
                         </p>
 
