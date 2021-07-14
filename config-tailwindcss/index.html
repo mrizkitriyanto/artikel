@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/pojoaque.min.css"
+        integrity="sha512-7C2kV8asrWDQGC96Y1KMSa/NQL18/kUEr4XqTNAeJjOaw9ada3reoy64Ze6dK9TbfaX7sEjE0mF4/17QTRpf/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mr.T0t000 Article</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body class="bg-yellow-100 dark:bg-gray-800 transition duration-1000">
+    <div>
+        <nav
+            class="fixed z-50 bg-yellow-100 w-full  dark:bg-gray-800 flex flex-row justify-center items-center h-14 transition duration-1000">
+            <button id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-yellow-500" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </nav>
+
+        <div class="flex justify-center ">
+
+            <div
+                class="lg:w-11/12 md:w-11/12 w-full lg:px-72 md:px-56 px-4 pt-20 overflow-y-auto font-light md:font-normal lg:font-normal tracking-wide lg:tracking-wider">
+                <div class="flex flex-col ">
+                    <img src="../img/tailwind.png" class="w-14 h-14" alt="python">
+
+                    <h1
+                        class="lg:text-4xl md:text-3xl sm:text-3xl text-3xl text-gray-800 dark:text-gray-200 my-4 font-medium">
+                        Cara Konfigurasi Tailwind CSS
+                    </h1>
+
+                    <h3 class="text-xs text-gray-800 dark:text-gray-200 mt-2 mb-10">
+                        Senin, 12 Juli 2021
+                    </h3>
+
+                    <div class=" text-md text-gray-800 dark:text-gray-200 mt-10">
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium">
+                            Intro
+                        </h1>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Artikel ini gua buat sebagai catatan dan reminder gua dikemudian hari, dan juga sharing
+                            kepada teman - teman.
+                        </p>
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Apa itu Tailwind?
+                        </h1>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Tailwind adalah CSS framework yang digunakan untuk mempermudah kita dalam styling website.
+                            Tailwind termasuk utility-based framework, berbeda dengan Bootstrap yang merupakan
+                            component-based framework. Apa bedanya? Bedanya, Bootstrap udah punya sebuah class yang
+                            sudah jadi(distyle), kemudian class tersebut bisa llangsung dipakai di setiap elemnt HTML.
+                            Bontohnya kita ingin membuat tombol berwarna biru dengan Bootstrap, kita hanya perlu
+                            mengetikkan
+                            <pre>
+                                <code class="language-html lg:text-base md:text-base text-sm">
+    &ltbutton class="btn btn-primary">
+        ini button dengan Bootstrap
+    &lt/button>
+                                </code>
+                            </pre>
+                        </p>
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Berbeda dengan Tailwind kita harus menuliskannya satu satu, Tailwind hanya menyingkat
+                            property CSS kita
+                        </p>
+                        <pre>
+                                <code class="language-html lg:text-base md:text-base text-sm">
+    &ltbutton class="p-2 bg-blue-600 text-white rounded-md">
+        ini button dengan Tailwind
+    &lt/button>
+                                </code>
+                            </pre>
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Gua lebih suka pakai tailwind karena lebih fleksibel dalam stylingnya. Tapi ga selamanya gua
+                            pake Tailwind, ada kalanya gua pakai Bootstrap yaitu ketika gua pengen cepet selesai.
+                        </p>
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Gimana cara konfigurasi Tailwind?
+                        </h1>
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Pastikan Node.js sudah trinstall di pc kita. Jika belum install Node.js terlebih dahulu. Selanjutnya buka command prompt atau bisa juga pakai terminal yang ada di dalam vscode. Pastikan kita berada di direktori project. Ketikkan
+                        </p>
+                        <pre>
+                            <code class="language-plaintext lg:text-base md:text-base text-sm">
+    npm init -y
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Kemudian kita perlu install tailwindcss, postcss, autoprefixer dan postcss-cli.
+                        </p>
+                        <pre>
+                            <code class="language-plaintext lg:text-base md:text-base text-sm">
+    npm install -D tailwindcss@latest postcss@latest autoprefixer@latest postcss-cli
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Setelah itu, kita perlu membuat file <span class="font-mono text-blue-700 rounded-md">postcss.config.js</span> di root project kita dan menambahkan 'tailwindcss' dan 'autoprefixer' ke PostCSS konfigurasi kita. Dengan meng-copykan code dibawah ini
+                        </p>
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    module.exports = {
+        plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+        }
+        }
+                            </code>
+                        </pre>
+                        <img class="pt-12 pb-2" src="./1.png" alt="ini gambar">
+
+                        <p class="lg:text-lg md:text-base text-base my-4 ">
+                            Kemudian kita membuat file <span class="font-mono text-blue-700 rounded-md">tailwind.config.js</span> untuk mengkustomisasi dan ini sangat diperlukan. Kita bisa meembuat file ini secara otomatis dengan mengetikkan perintah berikut di terminal
+                        </p>
+                        <pre>
+                            <code class="language-plaintext lg:text-base md:text-base text-sm">
+    npx tailwindcss init
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Itu akan membuat file <span class="font-mono text-blue-700 rounded-md">tailwind.config.js</span>  yang isinya
+                        </p>
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    module.exports = {
+        purge: [],
+        darkMode: false, // or 'media' or 'class'
+        theme: {
+            extend: {},
+        },
+        variants: {},
+        plugins: [],
+        }
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Kita perlu membuat folder <span class="font-mono text-blue-700 rounded-md">src</span> di root project dan mengisi folder tersebut dengan file <span class="font-mono text-blue-700 rounded-md">style.css</span> dan memasukkan code berikut kedalam file <span class="font-mono text-blue-700 rounded-md">style.css</span> (nama file bebas bisa di sesuaikan)
+                        </p>
+
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+                            </code>
+                        </pre>
+                        <img class="pt-12 pb-2" src="./2.png" alt="ini gambar">
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Sebelum bisa digunakan kita perlu menambahkan script di package.json sebagai perintah untuk mengcompile file css kita dengan cara menambahkan script berikut,
+                        </p>
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    "dev": "postcss src/style.css -o public/stylehasil.css"
+                            </code>
+                        </pre>
+                        <img class="pt-12 pb-0" src="./5.png" alt="ini gambar">
+                        <p class="lg:text-lg md:text-base text-base">
+                            <br/><span class="font-mono text-blue-700 rounded-md">src/style.css</span> adalah styling dari tailwin yang belum dicokmpile <br/><br/>
+                            <span class="font-mono text-blue-700 rounded-md">-o</span> adalah output <br/><br/>
+                            <span class="font-mono text-blue-700 rounded-md">public/stylehasil.css</span>public/stylehasil.css adalah tempat output hasil compile <br/><br/>
+                            kalian bebas dalam penamaan dan letak. <br/><br/><br/>
+                            Jadi deh tailwind siap digunakan. Ketika kamu ingin mengcompile, kamu cukup menjalankan perintah berikut di terminal
+                        </p>
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    npm run dev
+                            </code>
+                        </pre>
+                        <p class="lg:text-lg md:text-base text-base">
+                            <br/><br/>File dan folder akan otomatis dibuat.
+                        </p>
+                        <img class="pt-2 pb-12" src="./6.png" alt="ini gambar">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-yellow-100 flex dark:bg-gray-800 justify-center w-full items-center h-10 mt-20">
+            <h1 class=" dark:text-gray-200 text-gray-800 font-mono">
+                Mr.T0t000
+            </h1>
+        </footer>
+    </div>
+
+
+    <script src="../DarkMode.js"></script>
+</body>
+
+</html>

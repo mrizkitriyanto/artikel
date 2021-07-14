@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/pojoaque.min.css"
+        integrity="sha512-7C2kV8asrWDQGC96Y1KMSa/NQL18/kUEr4XqTNAeJjOaw9ada3reoy64Ze6dK9TbfaX7sEjE0mF4/17QTRpf/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mr.T0t000 Article</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body class="bg-yellow-100 dark:bg-gray-800 transition duration-1000">
+    <div>
+        <nav
+            class="fixed z-50 bg-yellow-100 w-full  dark:bg-gray-800 flex flex-row justify-center items-center h-14 transition duration-1000">
+            <button id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-yellow-500" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </nav>
+
+        <div class="flex justify-center ">
+
+            <div
+                class="lg:w-11/12 md:w-11/12 w-full lg:px-72 md:px-56 px-4 pt-20 overflow-y-auto font-light md:font-normal lg:font-normal tracking-wide lg:tracking-wider">
+                <div class="flex flex-col ">
+                    <img src="../img/tailwind.png" class="w-14 h-14" alt="python">
+
+                    <h1
+                        class="lg:text-4xl md:text-3xl sm:text-3xl text-3xl text-gray-800 dark:text-gray-200 my-4 font-medium">
+                        Deploy Project Tailwind ke Github Pages
+                    </h1>
+
+                    <h3 class="text-xs text-gray-800 dark:text-gray-200 mt-2 mb-10">
+                        Senin, 12 Juli 2021
+                    </h3>
+
+                    <div class=" text-md text-gray-800 dark:text-gray-200 mt-10">
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium">
+                            Intro
+                        </h1>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Artikel ini gua buat sebagai catatan dan reminder gua dikemudian hari, dan juga sharing
+                            kepada teman - teman.
+                        </p>
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Gimana Caranya
+                        </h1>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Pertama, Buat repository baru di Github.
+                        </p>
+                        <img class="pt-2 pb-2" src="./1.png" alt="ini gambar">
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Kita perlu menginisiasi git pada project kita dengan mengetikkan perintah berikut di terminal
+                        </p>
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    git init
+                            </code>
+                        </pre>
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Kita wajib install gh-pages dengan menjalankan perintah
+                        </p>
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    npm install gh-pages
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Selanjutnya kita perlu menambahkan file  <span class="font-mono text-blue-700 rounded-md">.gitignore</span> di root project kita yang isinya sebagai berikut
+                        </p>
+                        <img class="pt-2 pb-2" src="./2.png" alt="ini gambar">
+
+                        <p class="lg:text-lg md:text-base text-base my-4 ">
+                            Itu berarti folder node_modul tidak akan di push ke repository remote github kita.
+                        </p>
+
+                        <p class="lg:text-lg md:text-base text-base pt-8 ">
+                            Kemudian Kita juga perlu menambahkan Homepage di dalam file <span class="font-mono text-blue-700 rounded-md">package.json</span> yang merupakan repository kita
+                        </p>
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    "homepage": "https://mrizkitriyanto.github.io/tutorial-tailwinds/",
+                            </code>
+                        </pre>
+                        <img class="pt-0 pb-2" src="./3.png" alt="ini gambar">
+
+
+                        <p class="lg:text-lg md:text-base text-base pt-12 ">
+                            Setelah itu, kita juga perlu menambahkan script di dalam file <span class="font-mono text-blue-700 rounded-md">package.json</span>
+                        </p>
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
+                            </code>
+                        </pre>
+                        <img class="pt-0 pb-2" src="./4.png" alt="ini gambar">
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Sebelum menjalankan perintah deploy, kita harus menambahkan remote github kita dengan cara mengetikkan
+                        </p>
+
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    git remote add origin https://github.com/mrizkitriyanto/tutorial-tailwinds.git
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Belom selesai gesss, kita harus commit pekerjaan kita terlebih dahulu. Dengan mengetikkan perintah
+                        </p>
+
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    git add .
+                            </code>
+                        </pre>
+
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    git commit -m "isi ini dengan komentar atau pesan commit apa saja yamg diubah"
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Setelah itu, barulah kita bisa menjalankan perintah
+                        </p>
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    npm run deploy
+                            </code>
+                        </pre>
+
+                        <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
+                            Push code kita ke remote github.
+                        </h1>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Selain deploy kita perlu push code kita, karena yang di deploy hanya folder public saja. Kalo kita ga push code kita ke github, kita akan kesusahan jika sewaktu waktu folder projet kita hilang atau ketika kita ingin pull code kita di laptop lain. <br/><br/>
+                        </p>
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Jalankan perintah
+                        </p>
+
+                        <pre>
+                            <code class="javascript lg:text-base md:text-base text-sm">
+    git push -u origin master
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Sekian.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-yellow-100 flex dark:bg-gray-800 justify-center w-full items-center h-10 mt-20">
+            <h1 class=" dark:text-gray-200 text-gray-800 font-mono">
+                Mr.T0t000
+            </h1>
+        </footer>
+    </div>
+
+
+    <script src="../DarkMode.js"></script>
+</body>
+
+</html>

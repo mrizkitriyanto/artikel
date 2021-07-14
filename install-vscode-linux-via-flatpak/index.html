@@ -35,91 +35,80 @@
 
             <div class="lg:w-11/12 md:w-11/12 w-full lg:px-72 md:px-56 px-4 pt-20 overflow-y-auto font-light md:font-normal lg:font-normal tracking-wide lg:tracking-wider">
                 <div class="flex flex-col ">
-                    <img src="../img/virtualbox.png" class="w-14 h-14" alt="python">
+                    <img src="../img/linux.png" class="w-14 h-14" alt="python">
 
                     <h1
                         class="lg:text-4xl md:text-3xl sm:text-3xl text-3xl text-gray-800 dark:text-gray-200 my-4 font-medium">
-                        Menginstal Virtualbox
+                        Instal Visual Studio Code di Linux Menggunakan Flatpak
                     </h1>
 
                     <h3 class="text-xs text-gray-800 dark:text-gray-200 mt-2 mb-10">
-                        Sabtu, 26 Juni 2021
+                        Rabu, 14 Juli 2021
                     </h3>
-
-
-
-
 
                     <div class=" text-md text-gray-800 dark:text-gray-200 mt-10">
                         <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium">
                             Intro
                         </h1>
 
-
                         <p class="lg:text-lg md:text-base text-base ">
-                            Virtual Machine adalah Virtual Environtment yang berfungsi sebagai komputer sistem virtual yang memiliki CPU, memory, network interface, dan storagenya sendiri.
-                            <br><br/>
-                            Ada beberapa Virtual Machine yang bisa kita gunakan salah duanya yaitu VMware dan Virtualbox. Kali ini akan menggunakn Virtualbox sebagai contoh.
+                            Flatpak adalah package management yang memungkinkan kita mendistribusikan, menginstal, dan mengelola perangkat lunak tanpa perlu khawatir tentang dependensi, runtime, atau distribusi Linux.
                         </p>
 
                         <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
-                            Yang perlu dipersiapkan
+                            Cimana caranya?
                         </h1>
 
-
                         <p class="lg:text-lg md:text-base text-base ">
-                            Jika belum mendownload Virtualbox bisa downlaod filenya di <a class="hover:text-blue-600" href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a>
-                            <br><br/>
-
+                            Pertama-tama kita harus install flatpaknya dan menghubungkan repository flathub untuk dapat mendownload aplikasi yang ada di flatpak. <br/>Sekarang buka terminal terlebih dahulu kemudian ketikkan
                         </p>
 
+                        <pre>
+                            <code class="language-plaintext lg:text-base md:text-base text-sm">
+    $ sudo apt install flatpak -y
+                            </code>
+                        </pre>
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Setelah itu masukkan password
+                        </p>
+                        <img class="pt-2 pb-12" src="./1.png" alt="ini gambar">
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Setelah selesai kemudian ketikan
+                        </p>
+                        <pre>
+                            <code class="language-plaintext lg:text-base md:text-base text-sm">
+    $ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+                            </code>
+                        </pre>
+                        <img class="pt-0 pb-2" src="./2.png" alt="ini gambar">
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Jika sudah. Restart mesin
+                        </p>
 
                         <h1 class="lg:text-3xl md:text-xl text-xl mb-2 font-medium mt-8">
-                            Instal
+                            Install Visual Studio Code
                         </h1>
-
-                        <img class="pt-12 pb-2" src="./1.png" alt="ini gambar">
                         <p class="lg:text-lg md:text-base text-base ">
-                            Klik Next.
-                            <br><br>
+                            Buka web browser dan ketikkan
+                            <a href="https://flathub.org/home">https://flathub.org/home</a> dam search Visual Studio Code
+                        </p>
+                        <img class="pt-2 pb-2" src="./3.png" alt="ini gambar">
+                        <pre>
+                            <code class="language-plaintext lg:text-base md:text-base text-sm">
+    $ flatpak install flathub com.visualstudio.code
+                            </code>
+                        </pre>
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Copy dan paste-kan di terminal
+                        </p>
+                        <img class="pt-2 pb-2" src="./4.png" alt="ini gambar">
+
+                        <p class="lg:text-lg md:text-base text-base ">
+                            Tunggu hingga proses selesai.
                         </p>
 
-                        <img class="pt-12 pb-2" src="./2.png" alt="ini gambar">
-                        <p class="lg:text-lg md:text-base text-base ">
-                            Jika ingin mengganti letak penginstalan pilih browse dan pilih letaknya. Jika tidak bisa langsung Klik Next
-                            <br><br>
-                        </p>
-
-                        <img class="pt-12 pb-2" src="./3.png" alt="ini gambar">
-                        <p class="lg:text-lg md:text-base text-base ">
-                            Biarkan default dan klik next
-                            <br><br>
-                        </p>
-
-                        <img class="pt-12 pb-2" src="./4.png" alt="ini gambar">
-                        <p class="lg:text-lg md:text-base text-base ">
-                            Kemudian klik Yes
-                            <br><br>
-                        </p>
-
-                        <img class="pt-12 pb-2" src="./5.png" alt="ini gambar">
-                        <p class="lg:text-lg md:text-base text-base ">
-                            Klik Install
-                            <br><br>
-                        </p>
-
-                        <img class="pt-12 pb-2" src="./6.png" alt="ini gambar">
-                        <p class="lg:text-lg md:text-base text-base ">
-                            Klik Finish
-                            <br><br>
-                        </p>
-
-                        <img class="pt-12 pb-2" src="./7.png" alt="ini gambar">
-                        <p class="lg:text-lg md:text-base text-base ">
-                            Selesai deh. Kita bisa pakai virtualbox ini untuk menginstal OS lain.
-                            <br><br>
-                            Selamat Mencoba......
-                        </p>
                     </div>
                 </div>
             </div>
