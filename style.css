@@ -758,6 +758,10 @@ video {
   font-weight: 600;
 }
 
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
@@ -874,6 +878,10 @@ video {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:tracking-wider {
+    letter-spacing: 0.05em;
   }
 }
 
