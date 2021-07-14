@@ -852,6 +852,10 @@ video {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .md\:font-normal {
+    font-weight: 400;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -882,6 +886,10 @@ video {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:font-normal {
+    font-weight: 400;
   }
 
   .lg\:tracking-wider {
