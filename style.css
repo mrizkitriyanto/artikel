@@ -758,8 +758,8 @@ video {
   font-weight: 600;
 }
 
-.tracking-wider {
-  letter-spacing: 0.05em;
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-black {
